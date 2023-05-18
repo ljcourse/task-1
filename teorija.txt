@@ -1,0 +1,13 @@
+1.Informaciski sitem na internetot sto dozvoluva dokumenti da se konektiraat so drugi dokumenti preku hypertext linkovi ovozmozuvajki im na korisnicite da prebaruvaat informacii.
+2.request i response poraki
+3.Node.js e platforma za izrabotka na back end delot od aplikacijata,   express e web aplikaciska ramka vo nodejs.
+4.MVC arhitektura ima uloga da gi menadzira podatocite megu biznis logikata i aplikacijata.
+5.middleware funkcii za koi izvrsuvaat odredeni http req metodi.
+6.Moduli se biblioteki vo modejs.
+7.Sistemi koi go koristat internetot za interakcija pomegu aplikacii.
+8.jwt e bezbednosen metod vo samata aplikacija.
+9.Mongo db e platforma za zacuvuvanje na informaciite kreirani vo nodejs.
+10.Razlikata e toa sto vo mongodb se zacuvuvaat podatocite kreirani, dodeka mongoose e alatka za izrabotka na podatocite vo nodejs.
+11.Async koristi neblokiracki input output operaaci dodeka sync koristi blokiracki input output operacii
+*async koristat callback funkcii
+*sync funkciite go blokiraat ciklusot nanastanite dodeka async se izvrsuvaat paralelno.

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%=title%></h1>
+    <% if (academy.length === 0) { %>
+        <p>no academies found</p>
+        <% } else { %> <% academy.forEach(s=> { %>
+        <div>
+            <h2><%= a.name%></h2>
+            <p>Type: <%= a.address%></p>
+            <% }); %> <%} %>
+        </div>
+            <h1>Login in to update or delete</h1>
+            <div>
+              <form class="form" method="POST" action="/auth/test">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required />
+                <button type="submit">Login</button>
+              </form>
+            </div>
+            <hr />
+            <h1>Sign up </h1>
+            <div>
+              <form method="post" action="/test">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required />
+                <label for="password">password:</label>
+                <input type="password" name="password" required />
+                <button type="submit">Sign up</button>
+              </form>
+            </div>
+</body>
+</html>

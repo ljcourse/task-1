@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (academy.length === 0) { %>
+        <h1><%=title%></h1>
+        <% } else { %> <% academy.forEach(a=> { %>
+            <div>
+                <h2><%= a.name%></h2>
+                <p>Address: <%= a.type%></p>
+                <form method="POST" action="/welcome/delete/<%= a._id%>">
+                    <button type="submit">delete</button>
+                </form>
+                <h2>Update</h2>
+                <form method="POST" action="/welcome/update/<%= a._id%>">
+                    <label for="name">name: </label>
+                    <input type="text" name="name"  />
+                    <label for="address">discipline: </label>
+                    <input type="text" name="address" />
+                    <button type="submit">update academy</button>
+                </form>
+                <% }); %> <%} %>
+            </div>
+            <br>
+            <hr>
+            <h2>Post</h2>
+            <div>
+                <form method="POST" action="/welcome">
+                    <label for="name">name: </label>
+                    <input type="text" name="name"  />
+                    <label for="address">address: </label>
+                    <input type="text" name="address" />
+                    <button type="submit">post new sport</button>
+                </form>
+            </div>
+            <hr/>
+            <form method="POST" action="/logout">
+                <button type="submit">logout</button>
+            </form>
+</div>
+</body>
+</body>
+</html>
