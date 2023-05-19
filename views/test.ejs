@@ -10,10 +10,10 @@
     <h1><%=title%></h1>
     <% if (academy.length === 0) { %>
         <p>no academies found</p>
-        <% } else { %> <% academy.forEach(s=> { %>
+        <% } else { %> <% academy.forEach(a=> { %>
         <div>
             <h2><%= a.name%></h2>
-            <p>Type: <%= a.address%></p>
+            <p>Adress: <%= a.address%></p>
             <% }); %> <%} %>
         </div>
             <h1>Login in to update or delete</h1>
